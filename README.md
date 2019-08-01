@@ -2,6 +2,8 @@
 
 Simple lambda based on express, typescript and bundled with rollup.
 
+[![CircleCI](https://circleci.com/gh/jeroneemou/lambda-rollup/tree/master.svg?style=svg)](https://circleci.com/gh/jeroneemou/lambda-rollup/tree/master)
+
 ## Prerequisities
 - Have AWS account ;)
 - Install nvm - https://github.com/nvm-sh/nvm

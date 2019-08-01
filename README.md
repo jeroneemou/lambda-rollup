@@ -3,6 +3,7 @@
 Simple lambda based on express, typescript and bundled with rollup.
 
 ## Prerequisities
+- Have AWS account ;)
 - Install nvm - https://github.com/nvm-sh/nvm
 - Install aws cli - https://aws.amazon.com/cli/
 - Install jq - https://stedolan.github.io/jq/

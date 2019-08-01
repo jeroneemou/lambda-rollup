@@ -1,16 +1,16 @@
 {
   "name": "lambda-rollup",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Just small starter pack for lambda express with rollup",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "NODE_ENV=development rollup -c rollup.config.js",
+    "start": "NODE_ENV=development rollup -c rollup.config.js && node dist/handler.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jeroneemou/lambda-rollup.git"
   },
-  "author": "",
+  "author": "jeroneemou@gmail.com",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jeroneemou/lambda-rollup/issues"

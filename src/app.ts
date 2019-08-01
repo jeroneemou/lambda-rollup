@@ -1,13 +1,15 @@
-import express from 'express'
+import express, { Request, Response } from 'express'
 import { eventContext } from 'aws-serverless-express/middleware'
 
 const app = express()
 
-// Get request details from lambda event
+app.disable('x-powered-by');
 app.use(eventContext())
 
-app.get('/', (req, res) => {
-    res.json(req.apiGateway.event)
+app.get('/', (_req: Request, res: Response) => {
+    res.json({
+        "success": true
+    })
 })
 
 export default app

@@ -3,6 +3,6 @@ import app from './app'
 
 const server = createServer(app)
 
-exports.handler = async (event: any = {}, context: any = {}) => {
+exports.handler = (event: any = {}, context: any = {}) => {
     proxy(server, event, context)
 };
